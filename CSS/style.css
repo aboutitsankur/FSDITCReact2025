@@ -1,0 +1,38 @@
+body{
+    background-color: wheat;
+}
+
+/* h2{
+    background-color: brown;
+    color: white;
+} */
+
+div~p{
+    background-color: aqua;
+    color: green;
+}
+
+p:hover{
+    background-color: cadetblue;
+    font-size: xx-large;
+    color: chocolate;
+}
+
+p::after{
+    content: "FSD Training";
+    background-color: yellow;
+    color: white;
+}
+
+p::before{
+    content: "Welcome";
+    background-color: blueviolet;
+}
+
+p::selection{
+    background-color: chartreuse;
+}
+
+p:nth-child(2){
+    background-color: black;
+}
