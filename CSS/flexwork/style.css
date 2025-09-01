@@ -1,0 +1,47 @@
+/* body{
+    background-color: aqua;
+} */
+
+
+.container{
+    
+    display: flex;
+    background-color: goldenrod;
+    border: 1px dotted red;
+    flex-direction: row;
+    /* gap: 10px; */
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.child1{
+    height: 300px;
+    width: 300px;
+    background-color: aqua;
+    border: 1px dotted red;
+}
+
+.child2{
+    height: 300px;
+    width: 300px;
+    background-color: rgb(246, 154, 174);
+    border: 1px dotted red;
+}
+
+
+.child3{
+    height: 300px;
+    width: 300px;
+    background-color: gray;
+    border: 1px dotted red;
+}
+
+
+.child4{
+    height: 300px;
+    width: 300px;
+    background-color: rgb(97, 235, 235);
+    border: 1px dotted red;
+}
+
+
