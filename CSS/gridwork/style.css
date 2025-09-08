@@ -4,7 +4,37 @@
     grid-template-rows: 200px 500px 200px; */
 
     grid-template-columns: repeat(4,1fr);
-    grid-template-rows: 200px 500px 200px;
+    grid-template-rows: 100px 70px 500px 100px;
+}
+
+.header{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background-color: rgb(113, 111, 111);
+    color: white;
+    border: 1px solid rgb(113, 111, 111);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.subheader{
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    display: flex;
+    background-color: #0F1111;
+    justify-content: space-evenly;
+    color: white;
+    align-items: center;
+    border: 1px solid white;
+}
+
+.subheader:hover{
+    font-size: 1.3em;
 }
 
 .box1{
@@ -25,8 +55,8 @@ width: 100px;
 height: 150px;
 border: 1px solid red;
 background-color: chocolate;
-margin-top: 20px;
-margin-left: 20px;
+margin-top: 30px;
+margin-left: 30px;
 }
 
 .box12{
@@ -34,8 +64,8 @@ width: 100px;
 height: 150px;
 border: 1px solid red;
 background-color: cornflowerblue;
-margin-top: 20px;
-margin-right: 20px;
+margin-top: 30px;
+margin-left: 30px;
 }
 
 .box13{
@@ -43,8 +73,8 @@ width: 100px;
 height: 150px;
 border: 1px solid red;
 background-color: darkolivegreen;
-margin-top: 20px;
-margin-left: 20px;
+margin-top: 30px;
+margin-left: 30px;
 }
 
 .box14{
@@ -52,24 +82,153 @@ width: 100px;
 height: 150px;
 border: 1px solid red;
 background-color: darkslateblue;
-margin-top: 20px;
-margin-right: 20px;
+margin-top: 30px;
+margin-left: 30px;
 }
 
 .box2{
     border: 1px dotted rosybrown;
     background-color: brown;
     height: 500px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1 fr);
+}
+
+.box21{
+ width: 100px;
+height: 150px;
+border: 1px solid red;
+background-color: chocolate;
+margin-top: 30px;
+margin-left: 30px;
+}
+
+.box22{
+width: 100px;
+height: 150px;
+border: 1px solid red;
+background-color: chocolate;
+margin-top: 30px;
+margin-left: 30px;
+}
+
+.box23{
+width: 100px;
+height: 150px;
+border: 1px solid red;
+background-color: chocolate;
+margin-top: 30px;
+margin-left: 30px;
+}
+
+.box24{
+width: 100px;
+height: 150px;
+border: 1px solid red;
+background-color: chocolate;
+margin-top: 30px;
+margin-left: 30px;
 }
 
 .box3{
     border: 1px dotted rosybrown;
     background-color: green;
     height: 500px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1 fr);
+}
+
+.box31{
+width: 100px;
+height: 150px;
+border: 1px solid red;
+background-color: chocolate;
+margin-top: 30px;
+margin-left: 30px;
+}
+
+.box32{
+width: 100px;
+height: 150px;
+border: 1px solid red;
+background-color: chocolate;
+margin-top: 30px;
+margin-left: 30px;
+}
+
+.box33{
+width: 100px;
+height: 150px;
+border: 1px solid red;
+background-color: chocolate;
+margin-top: 30px;
+margin-left: 30px;
+}
+
+.box34{
+width: 100px;
+height: 150px;
+border: 1px solid red;
+background-color: chocolate;
+margin-top: 30px;
+margin-left: 30px;
 }
 
 .box4{
     border: 1px dotted rosybrown;
     background-color: springgreen;
     height: 500px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1 fr);
+}
+
+.box41{
+width: 100px;
+height: 150px;
+border: 1px solid red;
+background-color: chocolate;
+margin-top: 30px;
+margin-left: 30px;
+}
+
+.box42{
+width: 100px;
+height: 150px;
+border: 1px solid red;
+background-color: chocolate;
+margin-top: 30px;
+margin-left: 30px;
+}
+
+.box43{
+width: 100px;
+height: 150px;
+border: 1px solid red;
+background-color: chocolate;
+margin-top: 30px;
+margin-left: 30px;
+}
+
+.box44{
+width: 100px;
+height: 150px;
+border: 1px solid red;
+background-color: chocolate;
+margin-top: 30px;
+margin-left: 30px;
+}
+
+.footer{
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    background-color: #333333;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
