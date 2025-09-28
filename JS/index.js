@@ -97,34 +97,34 @@
 // div[0].style.backgroundColor="aqua";
 // console.log(div);
 
-const container=document.getElementsByClassName('container');
+// const container=document.getElementsByClassName('container');
 
-// container[0].innerHTML='<h2 style=color:red>Hello Ankur!</h2>'
-// console.dir(container);
-const h2=document.createElement('h2');
-h2.innerText="Ankur Kumar Chaubey";
-h2.style.color="red";
-h2.style.backgroundColor="black";
-console.log(h2);
-container[0].appendChild(h2);
-
-
-
-const button=document.getElementById('btn');
-console.log(button);
+// // container[0].innerHTML='<h2 style=color:red>Hello Ankur!</h2>'
+// // console.dir(container);
+// const h2=document.createElement('h2');
+// h2.innerText="Ankur Kumar Chaubey";
+// h2.style.color="red";
+// h2.style.backgroundColor="black";
+// console.log(h2);
+// container[0].appendChild(h2);
 
 
-function msg(){
+
+// const button=document.getElementById('btn');
+// console.log(button);
+
+
+// function msg(){
     // console.log("Hi! I am working on MERN");
     // alert("Hi! I am working on MERN");
 
-    document.getElementById('contain').innerHTML="<h>Loading image.....</h>"
-    setTimeout(()=>{const img=document.createElement('img');
-    img.src="https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2023/03/copy-urls-tabs-featured-image.jpg"
-    img.setAttribute('height','200px');
-    img.setAttribute('width','200px');
-    console.log(img);
-    container[0].appendChild(img);
+    // document.getElementById('contain').innerHTML="<h>Loading image.....</h>"
+    // setTimeout(()=>{const img=document.createElement('img');
+    // img.src="https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2023/03/copy-urls-tabs-featured-image.jpg"
+    // img.setAttribute('height','200px');
+    // img.setAttribute('width','200px');
+    // console.log(img);
+    // container[0].appendChild(img);
     
     // const container=document.getElementsByClassName('contain');
     // const h2=document.createElement('h2');
@@ -133,10 +133,77 @@ function msg(){
     // h2.style.backgroundColor="black";
     // container[0].appendChild(h2);
 
-    document.getElementById('contain').innerHTML="<h2>ABES Engineering College</h2>"},2000);
+//     document.getElementById('contain').innerHTML="<h2>ABES Engineering College</h2>"},2000);
 
     
-}
-button.addEventListener('click',()=>(msg()));
+// }
+// button.addEventListener('click',()=>(msg()));
+
+
+
+
+// const button=document.getElementById('btn');
+// function longdata(){
+//     console.log("Hii");
+//     for(i=0;i<100000000;i++){
+//         console.log(i);
+//     }
+// }
+// button.addEventListener('click',longdata);
+
+
+// console.log("start");
+// setTimeout(()=>{
+//     console.log("Welcome to FSD")
+// },2000);
+// console.log("end");
+
+
+// function greetmsg(myname){
+//     return "Hii,"+myname+" welcome to abes college";
+// }
+
+// function msghandler(msg,clbk){
+//     console.log(msg);
+//     const data=clbk(msg);
+//     return data;
+// }
+
+// const student=["Rahul","Aman","Ankur"];
+// student.forEach((name)=>{
+//     console.log(msghandler(name,greetmsg));
+// })
+// const completemsg = msghandler("Hii",greetmsg);
+// console.log(completemsg);
+
+
+
+// Promise
+
+// const myPromise=new Promise((resolve,reject)=>{
+//     const password="Ankur@123";
+//     if(password.length>=8){
+//         resolve("Strong Password");
+//     }else{
+//         reject("Weak Password");
+//     }
+// });
+
+// myPromise.then((result)=>{
+//     console.log(result);
+// })
+// .catch((err)=>{
+//     console.log(err);
+// })
+// .finally(()=>{
+//     console.log("all the reources have closed successfully");
+// });
+
+
+// async function handleData(){
+//     const data=await myPromise;
+//     console.log(data);
+// }
+// handleData();
 
 
