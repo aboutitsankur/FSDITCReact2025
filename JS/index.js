@@ -207,3 +207,29 @@
 // handleData();
 
 
+const button = document.getElementById('btn');
+const disp = document.getElementById('disp');
+let table =`<table border=1>`;
+async function fetchdata(){
+    disp.innerHTML="<h2>Data is loading...</h2>"
+    const response = await fetch('https://dummyjson.com/recipes');
+    const jsondata = await response.json();
+    console.log(jsondata.recipes);
+    // disp.innerHTML = <h2>${jsondata.recipes[0].name} ${jsondata.recipes[0].id}</h2>;
+
+    jsondata.recipes.forEach(element=>{
+        table+=`<tr>
+        <td><img src=${element.image} height=200 width=200 alt=image></td>
+        <td>${element.id}</td>
+        <td>${element.name}</td>
+        
+        </tr>`
+    });
+
+    table+='</table>';
+    disp.innerHTML=table;
+
+}
+button.addEventListener('click',fetchdata);
+
+
