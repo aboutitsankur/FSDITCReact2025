@@ -1,11 +1,13 @@
 import "./App.css";
-import Profile from "../profile";
+import ImageManipulation from "./component/ImageManipulation";
+// import StateHandling from "./component/StateHandling";
+// import Gallery from "./gallery";
 
 function App() {
   return (
     <>
       <div>
-        <Profile name="Ankur Chaubey" branch="IT" section="C" college="ABES" />
+        <ImageManipulation/>
       </div>
     </>
   );
