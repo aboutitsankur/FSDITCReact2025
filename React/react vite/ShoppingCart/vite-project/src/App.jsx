@@ -1,28 +1,24 @@
-
-
-import "./App.css";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-
-import Login from "./component/Login.jsx";
-import Registration from "./component/Registration.jsx";
-import Mainlayout from "./component/Mainlayout.jsx";
-import Dashboard from "./component/Dashboard.jsx";
-
+import './App.css'
+import Dashboard from './component/Dashboard.jsx'
+import Login from './component/Login.jsx'
+import Mainlayout from './component/Mainlayout.jsx'
+import Signup from './component/Registration.jsx'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 function App() {
-  
 
   return (
-    <>
-      <h2>Welcome to Shopping Cart</h2>
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Mainlayout />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/register" element={<Registration />} />
-          <Route path="/dashboard" element={<Dashboard />} />
+    <>  
+      <div>
+        <BrowserRouter> 
+          <Routes>
+            <Route path="/login" element={<Login />} />
+            <Route path="/register" element={<Signup />} />
+            <Route path="/" element={<Mainlayout />} />
+            <Route path="/dashboard" element={<Dashboard />} />
         </Routes>
       </BrowserRouter>
+    </div>
     </>
   );
 }
